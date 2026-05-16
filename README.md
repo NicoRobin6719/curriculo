@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Currículo
 
-## Getting Started
+Este projeto é uma aplicação simples de gestão de currículos construída com **Next.js 16**, **React 19** e **Tailwind CSS**.
 
-First, run the development server:
+## Sobre o projeto
+
+A aplicação permite:
+
+- listar currículos cadastrados
+- visualizar os detalhes de cada currículo
+- criar um novo currículo usando um formulário
+- armazenar dados localmente no navegador via `localStorage`
+
+A página principal está em `/sistema/paginas/curriculos` e cada currículo tem um detalhe em `/sistema/paginas/curriculos/[id]`.
+
+## Estrutura principal
+
+- `src/app/sistema/paginas/curriculos/page.tsx` — lista de currículos
+- `src/app/sistema/paginas/curriculos/[id]/page.tsx` — detalhe de currículo
+- `src/app/sistema/paginas/curriculos/novo/page.tsx` — formulário para criar currículo
+- `src/data/curriculos.ts` — dados iniciais de exemplo
+
+## Como executar
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra `http://localhost:3000/sistema/paginas/curriculos` no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Observações
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Os currículos são mantidos localmente no navegador.
+- Em um app real, os dados deveriam ser salvos em uma API ou banco de dados.
 
-## Learn More
+## GitHub
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Repositório: `https://github.com/NicoRobin6719/curriculo`
