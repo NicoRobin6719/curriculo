@@ -19,7 +19,7 @@ export default function CurriculosPage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-200 via-pink-300 to-pink-200 p-10">
+    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-pink-200 to-pink-100 p-10">
       <div className="flex items-center justify-between mb-10">
         <div>
           <h1 className="text-4xl font-bold text-pink-700">🎀 Currículos</h1>
@@ -47,7 +47,7 @@ export default function CurriculosPage() {
 
             <Link
               href={`/sistema/paginas/curriculos/${c.id}`}
-              className="mt-6 block rounded-xl bg-pink-100 py-3 text-center font-semibold text-pink-600"
+              className="mt-6 block rounded-xl bg-pink-50 py-3 text-center font-semibold text-pink-600"
             >
               Ver detalhes →
             </Link>
